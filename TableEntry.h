@@ -35,7 +35,7 @@ class TableEntry {
 		}
 
 		friend ostream& operator<<(ostream &out, const TableEntry<V> &te){
-			out<<"key: "<<te.key<<"\nvalue: "<<te.value<<endl;
+			out<<" ('"<<te.key<<"'"<<" ==> "<<te.value<<") "<<endl;
 			return out;
 		}
 
